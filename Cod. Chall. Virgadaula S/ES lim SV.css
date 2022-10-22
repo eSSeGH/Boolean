@@ -1,0 +1,106 @@
+/* Generale */
+*{
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* sfondo */
+body{
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* contenitore oscurato */
+div{
+  width: 70%;
+  margin: auto;
+  background-color: rgba(1, 1, 1, 0.5);
+  border-radius: 10px;
+}
+
+/* logo + sottotitolo */
+header, nav{
+  text-align: center;
+}
+
+img{
+  margin-top: 50px;
+  height: 80px;
+  margin-bottom: 0px;
+}
+
+h1{
+  font-size: 25px;
+  color: rgb(0,220,0);
+}
+
+/* Barra input verde */
+nav{
+  background-color: rgb(0,220,0);
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+input[type="button"]:hover{
+  background-color: yellow;
+  border-radius: 3px;
+}
+
+/* Localizzazioni monopattini e stato carica */
+
+/* in funzione di una futura automatizzazione del riempimento della via e del valore dei metri, ho strutturato sia l'html che il css degli elementi nelle section come segue (nonostante ora sia una scelta non efficiente in termini di quantità di codice e di tempo)*/
+h2{
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+h2:before{
+  content: "Monopattino ";
+}
+
+section{
+  color: white;
+  width: 91%;
+  margin-left: auto;
+}
+
+span{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.metri:before{
+  content: "-  a "
+}
+
+.metri:after{
+  content: " metri da te"
+}
+
+.charge1{
+  margin-top: 0;
+  background-color: rgb(255, 200, 100);
+  border-radius: 3px;
+  width: 30%;
+}
+
+.charge2{
+  margin-top: 0;
+  background-color: rgb(0,220,0);
+  border-radius: 3px;
+  width: 60%;
+}
+
+.charge3{
+  margin-top: 0;
+  background-color: rgb(255,100,100);
+  border-radius: 3px;
+  width: 15%;
+}
+
+main{
+  padding-bottom: 50px;
+}
